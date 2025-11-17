@@ -10,7 +10,7 @@ const pool = new Pool({
   user: 'postgres',
   host: 'localhost',
   database: 'testdb', 
-  password: 'cft.2025',
+  password: '',
   port: 5432
 });
 
@@ -54,4 +54,5 @@ app.post('/contacto', async (req, res) => {
     console.error(err);
     res.status(500).json({ error: 'Error en la base de datos' });
   }
+
 });
